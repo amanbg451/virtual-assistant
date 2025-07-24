@@ -1,11 +1,12 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
-import { userDataContext } from '../context/UserContext'
-import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import aiImg from "../assets/ai.gif"
-import { CgMenuRight } from "react-icons/cg";
-import { RxCross1 } from "react-icons/rx";
 import userImg from "../assets/user.gif"
+import { RxCross1 } from "react-icons/rx";
+import { CgMenuRight } from "react-icons/cg";
+import { useNavigate } from 'react-router-dom'
+import { userDataContext } from '../context/UserContext'
+import React, { useContext, useEffect, useRef, useState } from 'react'
+
 function Home() {
   const { userData, serverUrl, setUserData, getGeminiResponse } = useContext(userDataContext)
   const navigate = useNavigate()
